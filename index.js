@@ -79,10 +79,25 @@ function shareURL() {
 } 
 
 function shareMessage() {
-    Kakao.Share.sendScrp({
-        requestUrl: "https://jocular-kulfi-3929a7.netlify.app"
+    Kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: 'x카카오공유하기 시 타이틀',
+          description: '카카오공유하기 시 설명',
+          imageUrl: './image/ENFP.png',
+          link: {
+            webUrl: 'https://6476288a70173a12d8dbe060--enchanting-lollipop-bf5ced.netlify.app',
+          },
+        },
+        buttons: [
+          {
+            title: '웹으로 보기',
+            link: {
+              webUrl: 'https://6476288a70173a12d8dbe060--enchanting-lollipop-bf5ced.netlify.app',
+            },
+          },
+        ],
+        // 카카오톡 미설치 시 카카오톡 설치 경로이동
+        installTalk: true,
+      })
     }
-
-    )
-    
-}
