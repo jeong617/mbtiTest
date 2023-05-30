@@ -86,14 +86,14 @@ function shareMessage() {
           description: '카카오공유하기 시 설명',
           imageUrl: './image/ENFP.png',
           link: {
-            webUrl: 'https://6476288a70173a12d8dbe060--enchanting-lollipop-bf5ced.netlify.app',
+            webUrl: 'https://marvelous-lebkuchen-76905a.netlify.app',
           },
         },
         buttons: [
           {
             title: '웹으로 보기',
             link: {
-              webUrl: 'https://6476288a70173a12d8dbe060--enchanting-lollipop-bf5ced.netlify.app',
+              webUrl: 'https://marvelous-lebkuchen-76905a.netlify.app',
             },
           },
         ],
